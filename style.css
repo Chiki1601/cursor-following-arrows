@@ -1,0 +1,50 @@
+* {
+  pointer-events: none;
+}
+
+html,
+body {
+  height: 100%;
+  cursor: url("oval.png"), auto;
+}
+
+body {
+  background-color: black;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.drop {
+  width: 30px;
+  height: 30px;
+  transform-origin: center;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  border: none;
+  fill: white;
+}
+
+.block {
+  display: flex;
+  margin: 5px;
+}
+
+.first svg {
+  margin: 5px; /* change theses to break it */
+  padding: 50px;
+}
+
+.first .drop {
+  margin: 5px;
+  /* change theses to break it */
+  transition: all 0.8s cubic-bezier(.27,0,.27,1);
+}
+
+.second .drop {
+  margin: 15px;
+}
